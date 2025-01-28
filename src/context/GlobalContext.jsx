@@ -8,9 +8,9 @@ const apiKey = import.meta.env.VITE_API_KEY;
 function GlobalProvider({ children }) {
   const [movies, setMovies] = useState([]);
 
-  const fetchMovies = () => {
+  const fetchMovies = (searchTerm) => {
     axios
-      .get(apiKey)
+      .get(`${apiKey}&query=${searchTerm}`)
       .then((res) => {
         setMovies(res.data);
       })
