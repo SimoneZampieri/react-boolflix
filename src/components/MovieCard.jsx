@@ -6,6 +6,8 @@ const MovieCards = ({ movie }) => {
         <div className="card-body">
           <h5 className="card-text">Titolo: {movie.title}</h5>
           <p className="card-text">Titolo originale: {movie.original_title}</p>
+          <p>Lingua: {movie.original_language}</p>
+          <p>Voto: {movie.vote_average}</p>
         </div>
       </div>
     </div>

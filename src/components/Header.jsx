@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useGlobalContext } from "../context/GlobalContext";
 
 const Header = () => {
-  const [searchTerm, setSearchTerm] = useState("");
   const { fetchMovies } = useGlobalContext();
+  const [searchTerm, setSearchTerm] = useState("");
 
   const searchHand = (e) => {
     e.preventDefault();
