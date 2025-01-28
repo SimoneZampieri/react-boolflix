@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import MovieCards from "./MovieCard";
 
 const MovieList = () => {
-  const { searchData, fetchMovies } = useGlobalContext();
+  const { movies, fetchMovies } = useGlobalContext();
 
   useEffect(() => {
     fetchMovies();
@@ -11,7 +11,7 @@ const MovieList = () => {
 
   return (
     <>
-      {searchData.map((movie) => (
+      {movies.map((movie) => (
         <MovieCards key={movie.id} movie={movie} />
       ))}
     </>
