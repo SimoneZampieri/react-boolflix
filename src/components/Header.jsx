@@ -3,7 +3,7 @@ const Header = () => {
     <header>
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand">Navbar</a>
+          <a className="navbar-brand">BoolFlix</a>
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"
