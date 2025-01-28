@@ -1,11 +1,19 @@
 import Header from "./components/Header";
-import Main from "./components/Main";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { GlobalProvider } from "./context/GlobalContext";
+import Layout from "./layout/DefLay";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
+      <GlobalProvider>
+        <BrowserRouter>
+          <Routes component={Layout}>
+            <Route path="/" component={HomePage} />
+          </Routes>
+        </BrowserRouter>
+      </GlobalProvider>
     </>
   );
 }
