@@ -10,9 +10,11 @@ header{
   div{
     a{
       font-size: 2rem;
-      }
-    
+      } 
   }
+}
 
- 
+.flags{
+  height: 30px;
+  width: 50px;
 }
