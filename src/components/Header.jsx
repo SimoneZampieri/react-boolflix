@@ -24,7 +24,7 @@ const Header = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn btn-outline-danger" type="submit">
               Search
             </button>
           </form>

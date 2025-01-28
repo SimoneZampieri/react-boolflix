@@ -2,14 +2,12 @@ import { useGlobalContext } from "../context/GlobalContext";
 import MediaCards from "./MovieCard";
 
 const MovieList = () => {
-  const { setMovies } = useGlobalContext();
+  const { movies } = useGlobalContext();
 
-  const mediaType = setMovies.map((media) =>
-    media.media_type === "movie" ? (
-      <MediaCards key={media.id} media={media} />
-    ) : null
-  );
-
+  const mediaType = movies.map((media) => (
+    <MediaCards key={media.id} media={media} />
+  ));
+  console.log(mediaType);
   return <>{mediaType}</>;
 };
 

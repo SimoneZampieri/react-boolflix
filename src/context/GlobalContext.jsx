@@ -9,10 +9,20 @@ function GlobalProvider({ children }) {
   const [movies, setMovies] = useState([]);
 
   const fetchMovies = (searchTerm) => {
+    const options = {
+      method: "GET",
+      url: `https://api.themoviedb.org/3/search/movie?query=${searchTerm}`,
+      headers: {
+        accept: "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
+    };
+
     axios
-      .get(`${apiKey}&query=${searchTerm}`)
+      .request(options)
       .then((res) => {
-        setMovies(res.data);
+        console.log(res.data.results);
+        setMovies(res.data.results);
       })
       .catch((error) => {
         console.error("Error fetching movies:", error);
