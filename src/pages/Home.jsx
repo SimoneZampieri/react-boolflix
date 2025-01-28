@@ -1,5 +1,5 @@
-import { useGlobalContext } from "../context/GlobalContext";
 import MovieList from "../components/MovieList";
+
 const HomePage = () => {
   return (
     <div>

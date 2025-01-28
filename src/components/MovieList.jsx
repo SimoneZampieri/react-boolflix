@@ -1,21 +1,16 @@
 import { useGlobalContext } from "../context/GlobalContext";
-import { useEffect } from "react";
-import MovieCards from "./MovieCard";
+import MediaCards from "./MovieCard";
 
 const MovieList = () => {
-  const { movies, fetchMovies } = useGlobalContext();
+  const { setMovies } = useGlobalContext();
 
-  useEffect(() => {
-    fetchMovies();
-  }, []);
-
-  return (
-    <>
-      {movies.map((movie) => (
-        <MovieCards key={movie.id} movie={movie} />
-      ))}
-    </>
+  const mediaType = setMovies.map((media) =>
+    media.media_type === "movie" ? (
+      <MediaCards key={media.id} media={media} />
+    ) : null
   );
+
+  return <>{mediaType}</>;
 };
 
 export default MovieList;
