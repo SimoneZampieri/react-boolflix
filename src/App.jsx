@@ -9,8 +9,10 @@ function App() {
     <>
       <GlobalProvider>
         <BrowserRouter>
-          <Routes component={Layout}>
-            <Route path="/" component={HomePage} />
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<HomePage />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </GlobalProvider>
