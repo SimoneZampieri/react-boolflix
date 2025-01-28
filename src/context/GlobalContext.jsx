@@ -7,7 +7,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 function GlobalProvider({ children }) {
   const [movies, setMovies] = useState([]);
-  const [shows, setShows] = useState([]); // New state for shows
+  const [shows, setShows] = useState([]);
 
   const fetchMovies = (searchTerm) => {
     const options = {
@@ -30,7 +30,6 @@ function GlobalProvider({ children }) {
   };
 
   const fetchShows = (searchTerm) => {
-    // New function to fetch shows
     const options = {
       method: "GET",
       url: `https://api.themoviedb.org/3/search/tv?query=${searchTerm}`,
