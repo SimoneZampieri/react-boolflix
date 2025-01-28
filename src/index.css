@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header{
+  background-color: black;
+
+  div{
+    a{
+      font-size: 2rem;
+      }
+    
+  }
+
+ 
+}

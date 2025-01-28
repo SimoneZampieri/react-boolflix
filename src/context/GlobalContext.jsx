@@ -21,7 +21,6 @@ function GlobalProvider({ children }) {
     axios
       .request(options)
       .then((res) => {
-        console.log(res.data.results);
         setMovies(res.data.results);
       })
       .catch((error) => {

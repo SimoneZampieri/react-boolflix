@@ -1,13 +1,13 @@
 import { useGlobalContext } from "../context/GlobalContext";
-import MediaCards from "./MovieCard";
+import ShowCards from "./ShowCard";
 
-const MovieList = () => {
+const ShowList = () => {
   const { movies } = useGlobalContext();
 
   const mediaType = movies.map((media) => (
-    <MediaCards key={media.id} media={media} />
+    <ShowCards key={media.id} media={media} />
   ));
   return <>{mediaType}</>;
 };
 
-export default MovieList;
+export default ShowList;

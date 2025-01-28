@@ -1,4 +1,4 @@
-const MediaCards = ({ media }) => {
+const ShowCards = ({ media }) => {
   const rating = Math.floor(media.vote_average);
   return (
     <div className="col-4 p-3">
@@ -15,4 +15,4 @@ const MediaCards = ({ media }) => {
   );
 };
 
-export default MediaCards;
+export default ShowCards;
