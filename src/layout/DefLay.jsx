@@ -10,6 +10,9 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
+      <footer>
+        <h3>Made By Simo</h3>
+      </footer>
     </>
   );
 };

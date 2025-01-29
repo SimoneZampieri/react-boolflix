@@ -30,3 +30,19 @@ header{
 .logone{
   max-width: 150px;
 }
+
+main{
+  background-color: black;
+}
+
+footer{
+  background-color: black;
+
+  h3{
+    color: grey;
+  }
+}
+
+.titles{
+  color: #dc1a28;
+}

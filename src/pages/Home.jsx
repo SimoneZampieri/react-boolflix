@@ -4,15 +4,14 @@ import ShowList from "../components/ShowList";
 const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
       <div>
         <div className="container my-4">
           <div className="row">
-            <h1>Movies:</h1>
+            <h1 className="titles">Movies:</h1>
             <MovieList />
           </div>
           <div className="row">
-            <h1>Shows:</h1>
+            <h1 className="titles">Shows:</h1>
             <ShowList />
           </div>
         </div>
