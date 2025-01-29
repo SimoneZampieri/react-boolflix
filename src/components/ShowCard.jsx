@@ -1,7 +1,8 @@
 import flags from "./LanSelect";
+import RatingSys from "./RatingSys";
 
 const ShowCards = ({ media }) => {
-  const rating = Math.floor(media.vote_average);
+  const rating = Math.ceil(media.vote_average / 2);
 
   const flags = {
     it: "lang-flags/italian.png",
@@ -16,10 +17,14 @@ const ShowCards = ({ media }) => {
           <h5 className="card-text">Titolo: {media.original_name}</h5>
           <p className="card-text">Titolo originale: {media.original_title}</p>
           <img
+            src={`https://image.tmdb.org/t/p/w200${media.poster_path}`}
+            alt=""
+          />
+          <img
             src={flags[media.original_language]}
             alt={media.original_language}
           />
-          <p>Voto: {rating}</p>
+          <RatingSys vote={media.vote_average} />
         </div>
       </div>
     </div>

@@ -18,3 +18,11 @@ header{
   height: 30px;
   width: 50px;
 }
+
+.yellow-star{
+  color: yellow;
+}
+
+.grey-star{
+  color: gray;
+}
