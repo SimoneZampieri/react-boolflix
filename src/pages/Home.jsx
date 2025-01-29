@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <div>
-        <div className="container my-4">
+        <div className="container">
           <div className="row">
             <h1 className="titles">Movies:</h1>
             <MovieList />

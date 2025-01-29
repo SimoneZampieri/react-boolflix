@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useGlobalContext } from "../context/GlobalContext";
 
-const Header = () => {
+const NavBar = () => {
   const { fetchMovies, fetchShows } = useGlobalContext();
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -35,4 +35,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;

@@ -1,18 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
+import NavBar from "../components/Header";
 
 const Layout = () => {
   return (
     <>
       <header>
-        <Header />
+        <NavBar />
       </header>
       <main>
         <Outlet />
       </main>
-      <footer>
-        <h3>Made By Simo</h3>
-      </footer>
+      <footer></footer>
     </>
   );
 };
