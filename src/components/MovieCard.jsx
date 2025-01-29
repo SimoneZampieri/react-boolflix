@@ -18,27 +18,23 @@ const MediaCards = ({ media }) => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
-          className="img-fluid"
+          className="img-fluid immagine"
           src={`https://image.tmdb.org/t/p/w200${media.poster_path}`}
           alt={`Poster of ${media.title}`}
         />
-        <div className="card-body">
-          {isHovered && (
-            <>
-              <h5 className="card-text">Titolo: {media.title}</h5>
-              <p className="card-text">
-                Titolo originale: {media.original_title}
-              </p>
-              <div className="imgcont">
-                <img
-                  src={flags[media.original_language]}
-                  alt={media.original_language}
-                />
-              </div>
-              <RatingSys vote={rating} />
-            </>
-          )}
-        </div>
+        {isHovered && (
+          <div className="card-body cardbodi">
+            <h5 className="card-text">Titolo: {media.title}</h5>
+            <div className="imgcont">
+              <img
+                className="bandierina"
+                src={flags[media.original_language]}
+                alt={media.original_language}
+              />
+            </div>
+            <RatingSys vote={rating} />
+          </div>
+        )}
       </div>
     </div>
   );
