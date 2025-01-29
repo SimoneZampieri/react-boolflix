@@ -15,7 +15,7 @@ const Header = () => {
     <header>
       <nav className="navbar bg-dark text-bg-dark">
         <div className="container-fluid">
-          <img src="./assets/logo.png" alt="BoolFlix" />
+          <img src="../logo.png" alt="BoolFlix" className="logone" />
           <form className="d-flex" role="search" onSubmit={searchHand}>
             <input
               className="form-control me-2"
