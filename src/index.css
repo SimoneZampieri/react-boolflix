@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: black;
+}
+
 header{
   background-color: black;
+
+  img{
+    width: 200px;
+  }
 
   div{
     a{
@@ -14,35 +22,22 @@ header{
   }
 }
 
+.titles{
+  color: red;
+}
+
 .flags{
-  height: 30px;
-  width: 50px;
+  height: 100%;
+}
+
+.card-body {
+  transition: opacity 0.3s ease;
+}
+
+.grey-star{
+  color: grey;
 }
 
 .yellow-star{
   color: yellow;
-}
-
-.grey-star{
-  color: gray;
-}
-
-.logone{
-  max-width: 150px;
-}
-
-main{
-  background-color: black;
-}
-
-footer{
-  background-color: black;
-
-  h3{
-    color: grey;
-  }
-}
-
-.titles{
-  color: #dc1a28;
 }
