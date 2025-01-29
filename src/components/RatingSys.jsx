@@ -1,10 +1,7 @@
-const RatingSys = (media) => {
-  const vote = media.vote_average;
-  const dividedVote = Math.ceil(vote / 2);
-
+const RatingSys = ({ vote }) => {
   let rating = "";
 
-  if (dividedVote === 0) {
+  if (vote === 0) {
     rating = (
       <>
         <i className="fa-solid fa-star grey-star"></i>
@@ -14,7 +11,7 @@ const RatingSys = (media) => {
         <i className="fa-solid fa-star grey-star"></i>
       </>
     );
-  } else if (dividedVote === 1) {
+  } else if (vote === 1) {
     rating = (
       <>
         <i className="fa-solid fa-star yellow-star"></i>
@@ -24,7 +21,7 @@ const RatingSys = (media) => {
         <i className="fa-solid fa-star grey-star"></i>
       </>
     );
-  } else if (dividedVote === 2) {
+  } else if (vote === 2) {
     rating = (
       <>
         <i className="fa-solid fa-star yellow-star"></i>
@@ -34,7 +31,7 @@ const RatingSys = (media) => {
         <i className="fa-solid fa-star grey-star"></i>
       </>
     );
-  } else if (dividedVote === 3) {
+  } else if (vote === 3) {
     rating = (
       <>
         <i className="fa-solid fa-star yellow-star"></i>
@@ -44,7 +41,7 @@ const RatingSys = (media) => {
         <i className="fa-solid fa-star grey-star"></i>
       </>
     );
-  } else if (dividedVote === 4) {
+  } else if (vote === 4) {
     rating = (
       <>
         <i className="fa-solid fa-star yellow-star"></i>
@@ -54,7 +51,7 @@ const RatingSys = (media) => {
         <i className="fa-solid fa-star grey-star"></i>
       </>
     );
-  } else if (dividedVote === 5) {
+  } else if (vote === 5) {
     rating = (
       <>
         <i className="fa-solid fa-star yellow-star"></i>
